@@ -1,0 +1,21 @@
+<link rel="stylesheet" href="style.css">
+
+<form method="post">
+
+  <div>
+    <label for="ime">Ime i prezime:</label>
+    <input id="ime" name="ime" minlength="5" required>
+  </div>
+
+  <div>
+    <label for="telefon">Telefon:</label>
+    <input id="telefon" minlength="6" maxlength="20" name="telefon" placeholder="+381" required>
+  </div>
+
+  <div>
+    <label for="email">Email:</label>
+    <input pattern="[^@]+@[^@]+\.[a-zA-Z]{2,6}" type="email" id="email" name="email" required>
+  </div>
+
+  <button>Posalji</button>
+</form>
